@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title></title>
 </head>
 <body>
-
+<div class='registration container'>
+  <div class='row'>
+    <form novalidate class='col-8 offset-2 registration-form'>
+      <h1 class='mb-3 text-center pt-3'>Registration</h1>
+      <form>
+        <div class='form-group mb-3'>
+          <label for='registrationName'>Name</label>
+          <input required minlength='4' maxLength='40' type='text' class='form-control' id='registrationName'
+                 placeholder='Enter email' name='name'>
+        </div>
+        <div class='form-group mb-3'>
+          <label for='registrationEmail'>Email address</label>
+          <input required minlength='6' maxLength='50' type='email' class='form-control' id='registrationEmail'
+                 placeholder='Enter email' name='email'>
+          <div class=''></div>
+        </div>
+        <div class='form-group mb-3'>
+          <label for='registrationPassword'>Password</label>
+          <input required minlength='8' maxLength='60' type='password' class='form-control' id='registrationPassword'
+                 placeholder='Password' name='email'>
+          <div class=''></div>
+        </div>
+      </form>
+      <div class='alert alert-danger d-none'></div>
+      <div class='text-center'>
+        <button class='btn btn-primary ' type='submit'>Register</button>
+      </div>
+    </form>
+<div class='d-none login container'>
+  <form novalidate class='col-8 offset-2 registration-form'>
+    <h1 class='mb-3 text-center pt-3'>Login</h1>
+    <form>
+      <div class='form-group mb-3'>
+        <label for='loginEmail'>Email address</label>
+        <input required minlength='6' maxLength='50' type='email' class='form-control' id='loginEmail'
+               placeholder='Enter email' name='email'>
+        <div class=''></div>
+      </div>
+      <div class='form-group mb-3'>
+        <label for='loginPassword'>Password</label>
+        <input required minlength='8' maxLength='60' type='password' class='form-control' id='loginPassword'
+               placeholder='Password' name='email'>
+        <div class=''></div>
+      </div>
+    </form>
+    <div class='alert alert-danger d-none'></div>
+    <div class='text-center'>
+      <button class='btn btn-primary' type='submit'>Login</button>
+    </div>
+  </form>
+</div>
+  </div>
+</div>
+<script src='./api/script.js'></script>
 </body>
 </html>

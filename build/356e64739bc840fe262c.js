@@ -1,0 +1,1 @@
+import axios from"axios";const client=axios.create({baseURL:"http://localhost:3001/api"});export const registerUserRequest=async t=>await client.post("/register",t);export const loginUserRequest=async t=>await client.post("/login",t);
